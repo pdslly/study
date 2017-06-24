@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>Document</title>
+      <style>
+            body{
+                  background:#000;
+            }
+            svg{
+                  width: 50%;
+                  margin: 0 auto 50px;
+                  display: block;
+                  font-size: 200px;
+            }
+            .ycyg-text{
+                  fill: none;
+                  stroke-width: 2;
+                  stroke-linejoin: round;
+                  stroke-dasharray: 60 330;
+                  stroke-dashoffset: 0;
+                  -webkit-animation: stroke 6s infinite linear;
+                  animation: stroke 6s infinite linear;
+            }
+            .ycyg-text:nth-child(5n + 2){
+                  stroke: #fff;
+                  animation-delay: -2.4s;
+            }
+            .ycyg-text:nth-child(5n + 3){
+                  stroke: #fff;
+                  animation-delay: -3.6s;
+            }
+            .ycyg-text:nth-child(5n + 4){
+                  stroke: #fff;
+                  animation-delay: -4.8s;
+            }
+            .ycyg-text:nth-child(5n + 5){
+                  stroke: #fff;
+                  animation-delay: -6s;
+            }
+            .ycyg-text:nth-child(5n + 1){
+                  stroke: #fff;
+                  animation-delay: -1.2s;
+            }
+            @-webkit-keyframes stroke {
+                  100% {
+                  stroke-dashoffset: -400; } 
+            }
+            @keyframes stroke {
+                  100% {
+                  stroke-dashoffset: -400; } 
+            }
+      </style>
+</head>
+<body>
+      <svg viewBox="0 0 800 300">
+            <symbol id="s-text">
+                  <text text-anchor="middle" x="50%" y="50%" dy=".35em">
+                        鹰城阳哥
+                  </text>
+            </symbol>
+            <use xlink:href="#s-text" class="ycyg-text"></use>
+            <use xlink:href="#s-text" class="ycyg-text"></use>
+            <use xlink:href="#s-text" class="ycyg-text"></use>
+            <use xlink:href="#s-text" class="ycyg-text"></use>
+            <use xlink:href="#s-text" class="ycyg-text"></use>     
+      </svg>
+</body>
+</html>
