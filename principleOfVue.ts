@@ -1,4 +1,4 @@
-/** Created by lixiangyang on 2017/7/5...*/
+/** Created by lixiangyang on 2017/7/5....*/
 "use strict";
 let uuid = 0;
 const noop = function(){};
