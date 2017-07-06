@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>Document</title>
+</head>
+<body>
+      <script type="text/javascript">
+            let str = "asdqwedasdfasd";
+            function lengthOfLongestSubstring(str){
+                  let len = str.length >> 0;
+                  let stack = {};
+                  let j = 0;
+                  let max = 0;
+                  let m = 0;
+                  for( let i = 0; i < len; i++ ){
+                        if( m = stack[str[i]] ) j = Math.max(j, m);
+                        stack[str[i]] = i;
+                        max = Math.max(max, i-j+1);
+                  }
+                  return max;
+            }
+            console.log(lengthOfLongestSubstring(str));
+      </script>
+</body>
+</html>

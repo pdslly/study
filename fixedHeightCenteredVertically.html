@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>Document</title>
+      <style type="text/css">
+      html,body{
+            width: 100%;
+            height: 100%;
+      }
+      body,div{
+            padding: 0;
+            margin: 0
+      }
+      .wrap{
+            width: 100%;
+            height: 200px;
+            margin-bottom: 10px;
+      }
+      .box_1{
+            width: 100%;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+      }
+      .c_blue{
+            background-color: #00f;
+      }
+      .c_red{
+            background-color: #f00;
+      }
+      .main{
+            height: 100px;
+            width: 200px;
+      }
+      .f-inline{
+            display: inline-block;
+      }
+      .w_01{
+            display: table;
+      }
+      .w_02{
+            position: relative;
+            text-align: center;
+      }
+      .w_02:before{
+            content:"";
+            height: 50%;
+            width: 0;
+            top:0;
+            display: inline-block;
+      }
+      .w_03{
+            display: flex;
+            display: -webkit-flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-align-items: center;
+            -webkit-justify-content: center;
+      }
+      .w_04{
+            position: relative;
+      }
+      .w_05{
+
+      }
+      .m_02{
+            vertical-align: middle;
+      }
+      .m_04{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+      }
+      .m_05{
+            position: absolute;
+            top: 100%;
+            left: 100%;
+            margin-left: -100px;
+            margin-top: -50px;
+      }
+      .box_5{
+            width: 50%;
+            height: 50%;
+            position: relative;
+      }
+      </style>
+</head>
+<body>
+      <div class="wrap c_blue w_01">
+            <div class="box_1">
+                  <div class="main c_red f-inline"></div>
+            </div>
+      </div>
+      <div class="wrap c_blue w_02">
+            <div class="main f-inline c_red m_02"></div>
+      </div>
+      <div class="wrap c_blue w_03">
+            <div class="main f-inline c_red m_03"></div>
+      </div>
+      <div class="wrap c_blue w_04">
+            <div class="main c_red m_04"></div>
+      </div>
+      <div class="wrap c_blue w_05">
+            <div class="box_5">
+                  <div class="main c_red m_05"></div>
+            </div>
+      </div>
+</body>
+</html>
